@@ -1,0 +1,45 @@
+* {
+	margin:0;
+	padding: 0;
+}
+.box {
+	color:white;
+	font-size: 2em;
+	text-align: center;
+	font-family: "Futura";
+	font-weight: 100;
+}
+
+	.box p {
+		font-size: 5em;
+	}
+
+.box1 {background: #1abc9c;}
+.box2 {background: #349ab4;}
+.box3 {background: #666fdd;}
+.box4 {background: #3ccc22;}
+
+.wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.box {
+	flex:1;
+}
+
+.box3 {
+	flex:4;
+	order:1;
+}
+
+
+@media all and (min-width: 640px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .box3 {
+  	order:0;
+  }
+}
